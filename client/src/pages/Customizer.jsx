@@ -14,6 +14,9 @@ import { AIPicker, ColorPicker, CustomButton, FilePicker, Tab } from '../compone
 function Customizer() {
   const snap = useSnapshot(state);
 
+  const [prompt, setPrompt] = useState('');
+  const [generatingImg, setGeneratingImg] = useState(false);
+
   const [activeEditorTab, setActiveEditorTab] = useState("");
   const [activeFilterTab, setActiveFilterTab] = useState({
     logoShirt: true,
@@ -25,18 +28,9 @@ function Customizer() {
       case "colorpicker":
         return <ColorPicker />
       case "filepicker":
-        return <FilePicker
-          file={file}
-          setFile={setFile}
-          readFile={readFile}
-        />
+        return <FilePicker />
       case "aipicker":
-        return <AIPicker 
-          prompt={prompt}
-          setPrompt={setPrompt}
-          generatingImg={generatingImg}
-          handleSubmit={handleSubmit}
-        />
+        return <AIPicker />
       default:
         return null;
     }
