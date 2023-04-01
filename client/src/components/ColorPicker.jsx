@@ -3,6 +3,7 @@ import { SketchPicker } from 'react-color';
 import { useSnapshot } from 'valtio';
 
 import state from '../store';
+import { BEST_COLORS } from '../config/constants';
 
 function ColorPicker() {
   const snap = useSnapshot(state);
@@ -12,6 +13,7 @@ function ColorPicker() {
         color={snap.color}
         disableAlpha
         presetColors={[
+          ...BEST_COLORS,
           "#ccc",
           "#EFBD4E",
           "#80C670",

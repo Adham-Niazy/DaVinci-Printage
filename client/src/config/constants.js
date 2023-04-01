@@ -37,4 +37,4 @@ export const DecalTypes = {
   },
 };
 
-const BEST_COLORS = ['#ff6e6c', '#fbdd74', '#00ebc7', '#ffd803', '#16FF00', '#000', '#00FFF6'];
+export const BEST_COLORS = ['#ff6e6c', '#fbdd74', '#00ebc7', '#ffd803', '#16FF00', '#000', '#00FFF6'];
