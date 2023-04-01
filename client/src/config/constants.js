@@ -9,10 +9,10 @@ export const EditorTabs = [
     name: "filepicker",
     icon: fileIcon,
   },
-  {
-    name: "aipicker",
-    icon: ai,
-  },
+  // {
+  //   name: "aipicker",
+  //   icon: ai,
+  // },
 ];
 
 export const FilterTabs = [
@@ -36,3 +36,5 @@ export const DecalTypes = {
     filterTab: "stylishShirt",
   },
 };
+
+const BEST_COLORS = ['#ff6e6c', '#fbdd74', '#00ebc7', '#ffd803', '#16FF00', '#000', '#00FFF6'];
