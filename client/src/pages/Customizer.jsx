@@ -125,7 +125,7 @@ function Customizer() {
                   <Tab
                     key={tab.name}
                     tab={tab}
-                    handleClick={() => setActiveEditorTab(tab.name)}
+                    handleClick={() => setActiveEditorTab(activeEditorTab === tab.name ? '' : tab.name)}
                   />
                 ))}
 
